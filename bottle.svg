@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="400" height="700" fill="none">
+  <defs>
+    <!-- Cap Gradients -->
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="25%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#CBD5E1" />
+      <stop offset="75%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+
+    <!-- Glass Body Outer Gradient -->
+    <linearGradient id="glassBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35" />
+      <stop offset="15%" stop-color="#BAE6FD" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#E0F2FE" stop-opacity="0.08" />
+      <stop offset="85%" stop-color="#38BDF8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.45" />
+    </linearGradient>
+
+    <!-- Pure Water Liquid Gradient -->
+    <linearGradient id="waterLiquid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE" stop-opacity="0.7" />
+      <stop offset="40%" stop-color="#BAE6FD" stop-opacity="0.4" />
+      <stop offset="80%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.65" />
+    </linearGradient>
+
+    <!-- Glass Highlight Vertical Stripe -->
+    <linearGradient id="specularHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Shadow under bottle -->
+    <radialGradient id="bottleShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#0369A1" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#0B4F9C" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="softDropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="25" flood-color="#0284C7" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Ground Contact Shadow -->
+  <ellipse cx="200" cy="655" rx="120" ry="22" fill="url(#bottleShadow)" />
+
+  <!-- Bottle Silhouette Group with Shadow -->
+  <g filter="url(#softDropShadow)">
+    
+    <!-- Water Volume Inside Bottle -->
+    <path d="M 172 165 
+             C 172 175 160 210 135 240 
+             C 120 258 116 280 116 310 
+             L 116 595 
+             C 116 620 135 635 160 638 
+             L 240 638 
+             C 265 635 284 620 284 595 
+             L 284 310 
+             C 284 280 280 258 265 240 
+             C 240 210 228 175 228 165 
+             Z" 
+          fill="url(#waterLiquid)" />
+
+    <!-- Water Surface Curve / Meniscus -->
+    <ellipse cx="200" cy="180" rx="30" ry="6" fill="#BAE6FD" fill-opacity="0.85" />
+
+    <!-- Glass Outer Contour -->
+    <path d="M 170 70 
+             L 230 70 
+             L 230 115 
+             C 230 145 235 170 248 200 
+             C 265 240 288 270 288 315 
+             L 288 600 
+             C 288 630 268 645 240 648 
+             L 160 648 
+             C 132 645 112 630 112 600 
+             L 112 315 
+             C 112 270 135 240 152 200 
+             C 165 170 170 145 170 115 
+             Z" 
+          fill="url(#glassBody)" 
+          stroke="#FFFFFF" 
+          stroke-width="3" 
+          stroke-opacity="0.6" />
+
+    <!-- Glass Base Thickness -->
+    <path d="M 115 605 C 115 635 140 645 200 645 C 260 645 285 635 285 605 C 285 625 260 635 200 635 C 140 635 115 625 115 605 Z" 
+          fill="#FFFFFF" 
+          fill-opacity="0.4" />
+
+    <!-- Left Specular Reflection Line -->
+    <path d="M 124 315 L 124 595" stroke="url(#specularHighlight)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 136 325 L 136 585" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Right Edge Thin Glint -->
+    <path d="M 276 320 L 276 590" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Shoulder Specular Arc -->
+    <path d="M 148 225 C 132 250 126 280 126 310" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Neck Ring -->
+    <ellipse cx="200" cy="115" rx="32" ry="4.5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1.5" />
+
+    <!-- Premium Metallic Screw Cap -->
+    <rect x="166" y="55" width="68" height="42" rx="4" fill="url(#capGrad)" stroke="#475569" stroke-width="1.5" />
+    <!-- Cap Ridges -->
+    <line x1="174" y1="58" x2="174" y2="92" stroke="#64748B" stroke-width="1.5" />
+    <line x1="182" y1="58" x2="182" y2="92" stroke="#FFFFFF" stroke-width="1.5" />
+    <line x1="190" y1="58" x2="190" y2="92" stroke="#64748B" stroke-width="1.5" />
+    <line x1="198" y1="58" x2="198" y2="92" stroke="#FFFFFF" stroke-width="1.5" />
+    <line x1="206" y1="58" x2="206" y2="92" stroke="#64748B" stroke-width="1.5" />
+    <line x1="214" y1="58" x2="214" y2="92" stroke="#FFFFFF" stroke-width="1.5" />
+    <line x1="222" y1="58" x2="222" y2="92" stroke="#64748B" stroke-width="1.5" />
+
+    <rect x="168" y="93" width="64" height="6" rx="2" fill="#0B4F9C" />
+
+    <!-- Printed Logo & Label on the Glass Bottle -->
+    <g transform="translate(130, 310)">
+      <!-- Label Background Plaque (Frosted Glass Effect) -->
+      <rect x="0" y="0" width="140" height="200" rx="14" fill="#FFFFFF" fill-opacity="0.88" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1" />
+      
+      <!-- Mini pH Arc & Droplet inside label -->
+      <g transform="translate(48, 14)">
+        <path d="M 8 30 A 18 18 0 1 1 36 30" stroke="#0284C7" stroke-width="3.5" stroke-linecap="round" fill="none" />
+        <path d="M 22 14 C 22 14 12 26 12 32 C 12 37.5 16.5 42 22 42 C 27.5 42 32 37.5 32 32 C 32 26 22 14 22 14 Z" fill="#0B4F9C" />
+      </g>
+
+      <!-- Brand Name -->
+      <text x="70" y="82" font-family="'Fraunces', Georgia, serif" font-size="18" font-weight="800" text-anchor="middle" fill="#0B4F9C" letter-spacing="1">
+        ALKA<tspan fill="#0284C7">BOOST</tspan>
+      </text>
+
+      <text x="70" y="98" font-family="'Inter', system-ui, sans-serif" font-size="7" font-weight="700" text-anchor="middle" fill="#0284C7" letter-spacing="2">
+        ALKALINE RO WATER
+      </text>
+
+      <!-- pH Badge -->
+      <rect x="30" y="112" width="80" height="26" rx="13" fill="#0B4F9C" />
+      <text x="70" y="129" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle" fill="#FFFFFF">
+        pH 8.5 – 9.5
+      </text>
+
+      <!-- Sub details -->
+      <text x="70" y="152" font-family="'Inter', system-ui, sans-serif" font-size="7.5" font-weight="600" text-anchor="middle" fill="#334155">
+        MICRO-CLUSTERED
+      </text>
+      <text x="70" y="163" font-family="'Inter', system-ui, sans-serif" font-size="7" font-weight="500" text-anchor="middle" fill="#64748B">
+        ESSENTIAL MINERALS
+      </text>
+
+      <!-- Volume -->
+      <text x="70" y="185" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="800" text-anchor="middle" fill="#0B4F9C">
+        1 LITRE NET
+      </text>
+    </g>
+
+    <!-- Bubbles of Alkaline Pure Water -->
+    <circle cx="160" cy="560" r="4.5" fill="#FFFFFF" fill-opacity="0.75" />
+    <circle cx="185" cy="520" r="3.5" fill="#FFFFFF" fill-opacity="0.6" />
+    <circle cx="230" cy="545" r="5" fill="#FFFFFF" fill-opacity="0.7" />
+    <circle cx="215" cy="460" r="3" fill="#FFFFFF" fill-opacity="0.5" />
+    <circle cx="150" cy="420" r="3.5" fill="#FFFFFF" fill-opacity="0.55" />
+    <circle cx="170" cy="280" r="2.5" fill="#FFFFFF" fill-opacity="0.6" />
+    <circle cx="235" cy="270" r="3" fill="#FFFFFF" fill-opacity="0.65" />
+  </g>
+</svg>

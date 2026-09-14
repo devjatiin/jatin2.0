@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 560" width="460" height="560" fill="none">
+  <defs>
+    <linearGradient id="machineBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <linearGradient id="displayScreenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="tankWindowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.35" />
+    </linearGradient>
+
+    <filter id="purifierShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0B4F9C" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Purifier Unit Body -->
+  <g filter="url(#purifierShadow)">
+    <!-- Main Enclosure -->
+    <rect x="50" y="30" width="360" height="490" rx="36" fill="url(#machineBodyGrad)" stroke="#CBD5E1" stroke-width="2.5" />
+
+    <!-- Top Accent Bezel -->
+    <path d="M 50 66 C 50 46 66 30 86 30 L 374 30 C 394 30 410 46 410 66 L 410 95 L 50 95 Z" fill="#0B4F9C" />
+    <circle cx="75" cy="62" r="6" fill="#38BDF8" />
+    <text x="92" y="68" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#FFFFFF" letter-spacing="1">
+      ALKA<tspan fill="#38BDF8">BOOST</tspan> PRO SYSTEM
+    </text>
+    <text x="375" y="66" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#94A3B8">
+      10-STAGE RO+UV+ALKALINE
+    </text>
+
+    <!-- Digital Status / LED Control Dashboard Panel -->
+    <rect x="80" y="115" width="300" height="95" rx="14" fill="url(#displayScreenGrad)" stroke="#334155" stroke-width="2" />
+
+    <!-- Digital pH Metric -->
+    <text x="105" y="145" font-family="'Inter', monospace" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1">
+      ACTIVE pH OUTPUT
+    </text>
+    <text x="105" y="185" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="800" fill="#38BDF8">
+      9.2 <tspan font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#22C55E">OPTIMAL</tspan>
+    </text>
+
+    <!-- Vertical Divider in Panel -->
+    <line x1="225" y1="130" x2="225" y2="195" stroke="#334155" stroke-width="1.5" />
+
+    <!-- Digital TDS & ORP Metric -->
+    <text x="245" y="145" font-family="'Inter', monospace" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1">
+      PURITY / TDS
+    </text>
+    <text x="245" y="185" font-family="'Fraunces', Georgia, serif" font-size="32" font-weight="800" fill="#60A5FA">
+      78 <tspan font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">PPM</tspan>
+    </text>
+
+    <!-- Status Indicator LEDs -->
+    <g transform="translate(80, 225)">
+      <!-- LED 1: Sediment -->
+      <circle cx="15" cy="10" r="5" fill="#22C55E" />
+      <text x="28" y="14" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#475569">FILTRATION</text>
+
+      <!-- LED 2: RO -->
+      <circle cx="115" cy="10" r="5" fill="#22C55E" />
+      <text x="128" y="14" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#475569">RO MEMBRANE</text>
+
+      <!-- LED 3: UV/Alkaline -->
+      <circle cx="215" cy="10" r="5" fill="#0284C7" />
+      <text x="228" y="14" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#0284C7">ALKALIZER</text>
+    </g>
+
+    <!-- Transparent Pure Storage Tank Window -->
+    <rect x="80" y="255" width="300" height="175" rx="16" fill="url(#tankWindowGrad)" stroke="#38BDF8" stroke-width="1.5" />
+    
+    <!-- Water Level Inside Tank -->
+    <path d="M 82 320 Q 150 310 230 320 T 378 318 L 378 428 C 378 433 373 438 368 438 L 92 438 C 86 438 82 433 82 428 Z" fill="#0284C7" fill-opacity="0.35" />
+    <text x="230" y="380" font-family="'Inter', sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#0369A1" fill-opacity="0.7">
+      10 LITRE INTERNAL FOOD-GRADE TANK
+    </text>
+    
+    <!-- Water Bubbles inside tank -->
+    <circle cx="140" cy="350" r="4" fill="#FFFFFF" fill-opacity="0.7" />
+    <circle cx="210" cy="365" r="3" fill="#FFFFFF" fill-opacity="0.6" />
+    <circle cx="310" cy="340" r="4.5" fill="#FFFFFF" fill-opacity="0.8" />
+    <circle cx="180" cy="400" r="3.5" fill="#FFFFFF" fill-opacity="0.5" />
+
+    <!-- Chrome Dispenser Tap Spout and Lever -->
+    <g transform="translate(230, 440)">
+      <!-- Tap Base -->
+      <circle cx="0" cy="15" r="22" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" />
+      <!-- Chrome Spout -->
+      <path d="M -8 15 C -8 32 -4 46 0 52 C 4 46 8 32 8 15 Z" fill="#94A3B8" />
+      <circle cx="0" cy="52" r="5" fill="#0284C7" />
+      <!-- Water Droplet exiting spout -->
+      <path d="M 0 62 C -3 66 -4 70 -4 72 C -4 74 -2 76 0 76 C 2 76 4 74 4 72 C 4 70 3 66 0 62 Z" fill="#38BDF8" />
+    </g>
+
+    <!-- Side Handles / Vents -->
+    <rect x="58" y="270" width="8" height="60" rx="3" fill="#CBD5E1" />
+    <rect x="394" y="270" width="8" height="60" rx="3" fill="#CBD5E1" />
+  </g>
+</svg>

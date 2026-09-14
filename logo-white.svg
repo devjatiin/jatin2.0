@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 110" width="360" height="110" fill="none">
+  <defs>
+    <linearGradient id="meterGradW" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FACC15" />
+      <stop offset="45%" stop-color="#FB923C" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+
+    <linearGradient id="dropletGradW" x1="20%" y1="10%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10, 8)">
+    <!-- Speedometer / pH Gauge Arc -->
+    <g transform="translate(85, 8)">
+      <path d="M 0 32 A 34 34 0 0 1 12 12" stroke="#FACC15" stroke-width="4.5" stroke-linecap="round" fill="none" />
+      <path d="M 17 8 A 34 34 0 0 1 36 2" stroke="#FB923C" stroke-width="4.5" stroke-linecap="round" fill="none" />
+      <path d="M 42 2 A 34 34 0 0 1 58 10" stroke="#EF4444" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+      <!-- Center Pivot Hub & Needle Pointer -->
+      <circle cx="34" cy="34" r="3.5" fill="#38BDF8" />
+      <line x1="34" y1="34" x2="52" y2="16" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" />
+    </g>
+
+    <!-- Droplet on Right -->
+    <g transform="translate(142, 10)">
+      <path d="M 28 2 C 28 2 8 28 8 44 C 8 57.25 18.75 68 32 68 C 45.25 68 56 57.25 56 44 C 56 28 28 2 28 2 Z" 
+            fill="url(#dropletGradW)" />
+      
+      <!-- Inner White Wave Curves -->
+      <path d="M 13 46 C 18 53 26 55 36 49 C 43 45 49 46 53 50" 
+            stroke="#FFFFFF" 
+            stroke-width="3" 
+            stroke-linecap="round" 
+            fill="none" 
+            stroke-opacity="0.95" />
+      <path d="M 18 54 C 23 58 30 60 38 56 C 44 53 49 54 52 57" 
+            stroke="#FFFFFF" 
+            stroke-width="2.5" 
+            stroke-linecap="round" 
+            fill="none" 
+            stroke-opacity="0.9" />
+    </g>
+
+    <!-- Brand Wordmark ALKA (Cyan) & BOOST (Pure White) -->
+    <text x="0" y="44" 
+          font-family="'Inter', system-ui, -apple-system, sans-serif" 
+          font-style="italic" 
+          font-weight="900" 
+          font-size="38" 
+          letter-spacing="0.5" 
+          fill="#38BDF8">
+      ALKA
+    </text>
+
+    <text x="0" y="78" 
+          font-family="'Inter', system-ui, -apple-system, sans-serif" 
+          font-style="italic" 
+          font-weight="900" 
+          font-size="44" 
+          letter-spacing="1" 
+          fill="#FFFFFF">
+      BOOST
+    </text>
+
+    <!-- Tagline -->
+    <text x="2" y="96" 
+          font-family="'Inter', system-ui, -apple-system, sans-serif" 
+          font-weight="700" 
+          font-size="11.5" 
+          letter-spacing="0.5" 
+          fill="#93C5FD">
+      Pure Water. Better Living.
+    </text>
+  </g>
+</svg>
