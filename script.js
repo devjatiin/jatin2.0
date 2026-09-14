@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   // AlkaBoost Official WhatsApp Contact
-  const ALKABOOST_PHONE = '919992177635';
+  const ALKABOOST_PHONE = '919050211118';
   // Formspree endpoints (fallback endpoint for demonstration)
   const FORMSPREE_ORDER_URL = 'https://formspree.io/f/mqkvrgza';
   const FORMSPREE_VISIT_URL = 'https://formspree.io/f/mqkvrgza';
